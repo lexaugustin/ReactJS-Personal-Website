@@ -1,0 +1,11 @@
+#skills h4, #skills p {
+    margin: 0;
+}
+
+#skills h4 {
+    margin-bottom: 5px;
+}
+
+#skills {
+    margin-bottom: 30px;
+}

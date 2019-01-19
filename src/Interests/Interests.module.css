@@ -1,0 +1,65 @@
+/* #skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+#skills div {
+    max-width: 300px;
+    height: auto;
+    margin: 20px 3%;
+    text-align: center;
+
+    border-radius: 20px;
+    box-shadow: -1px 1px 20px #C7C7C7;
+}
+
+#skills div img,
+#skills div h4,
+#skills div p {
+    margin: 30px;
+} */
+
+#interests {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin-bottom: 30px
+}
+
+#interests:nth-child(odd) {
+    text-align: right;
+}
+
+#interests div {
+    margin: 0 70px;
+}
+
+#interests img {
+    height: 150px;
+}
+
+@media screen and (min-width: 1000px) {
+    #interests:nth-child(odd){
+        align-self: flex-start;
+        flex-direction: row-reverse;
+    }
+    
+    #interests:nth-child(even){
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    #interests {   
+        width: 100%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    #interests div {
+        margin: 0 5%;
+    }
+}

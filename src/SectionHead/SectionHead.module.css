@@ -1,0 +1,29 @@
+/* .section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.section-head {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.section-head * {
+    text-align: center;
+}
+
+.section-head .section-icon {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #0000D8;
+    text-align: center;
+}
+
+.section-subtitle {
+    margin: 0 50px;
+}

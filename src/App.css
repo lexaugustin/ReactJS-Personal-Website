@@ -1,32 +1,102 @@
-.App {
-  text-align: center;
+/* ==========================================================================
+General
+========================================================================== */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+section {
+  padding: 70px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ==========================================================================
+Latest Projects
+========================================================================== */
+#latest-projects {
+  background-color: #F9FAFF;
+}
+
+/* ==========================================================================
+More Projects
+========================================================================== */
+#more-projects-cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: center; */
+  /* align-items: center; */
+}
+
+.card {
+  margin: 50px;
+}
+
+/* ==========================================================================
+Skills & Interests
+========================================================================== */
+#skills-interests {
+  background-color: #F9FAFF;
+}
+
+/* SKILLS - EXPERIENCES */
+#skills-experiences {
+   columns: 2;
+   column-width: 200px;
+   column-rule: 1px solid #CCC;
+   column-gap: 5em;
+
+   width: 90%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+#skills {
+  text-align: end;
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  page-break-inside: avoid; /* Firefox */
+  break-inside: avoid; /* IE 10+ */
+}
+
+#experiences {
+  -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+  page-break-inside: avoid; /* Firefox */
+  break-inside: avoid; /* IE 10+ */
+}
+
+@media screen and (max-width: 548px) {
+  #skills, #experiences {
+    text-align: center;
+  }
+}
+
+
+/* INTERESTS */
+#interests {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ==========================================================================
+Contact
+========================================================================== */
+#contact {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ==========================================================================
+Footer
+========================================================================== */
+
+#footer {
+  /* height: 200px; */
+  background-color: #2B366B;
 }
+

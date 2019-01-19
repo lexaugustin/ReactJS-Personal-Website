@@ -1,0 +1,143 @@
+.section-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+.info {
+    max-width: 450px;
+    /* width: 70%; */
+    /* margin: 0 auto; */
+    margin: 0 7%;
+}
+
+/* ==========================================================================
+Project Image
+========================================================================== */
+.section-content .main-image {
+    width: 45%;
+    max-width: 250px;
+    margin: 0 7%;
+    /* margin-left: 5%; */
+    /* display: block; */
+    /* margin: 0 auto; */
+}
+
+
+/* ==========================================================================
+Project Name and Title
+========================================================================== */
+.project-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-name i {
+    /* color: #F19559; */
+    /* font-size: 20px; */
+    /* height: 20px; */
+    margin-right: 10px;
+}
+
+.project-name p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F19559;
+    margin: 10px 0;
+}
+
+.project-title p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #32325D;
+    margin: 0;
+}
+
+.text p {
+    color: #525F7F;
+    margin: 30px 0;
+}
+
+.section-content .main-image img {
+    max-width: 350px;
+    width: 100%;
+    /* margin-left: 5%; */
+    /* display: block; */
+    /* margin: 0 auto; */
+}
+
+.see-more {
+    /* text-align: right; */
+    /* display: flex; */
+    /* align-items: center; */
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    color: #F19559;
+}
+
+#see-more-line {
+    float: left;
+    border: 3px solid #F19559;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.buttons button {
+    background-color: transparent;
+    width: 150px;
+    height: 35px;
+    border-radius: 13px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#resume-button {
+    border: 1px solid #5E72E4;
+    color: #5E72E4
+}
+
+#contact-button {
+    border: 1px solid #2DCE89;
+    color: #2DCE89;
+}
+
+@media screen and (min-width: 961px) {
+    .section-content:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+    
+    .section-content:nth-child(even) {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .section-content {
+        flex-direction: column;
+    }
+
+    .section-content .main-image img {
+        margin: 0 auto;
+    }
+
+    .info {
+        max-width: 450px;
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,266 @@
+/* ==========================================================================
+General
+========================================================================== */
+#footer {
+    color: #FFF;
+}
+
+#footer-top {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-between; */
+}
+
+@media screen and (min-width: 1000px){
+    #footer-top {
+        margin: 0 auto 80px auto; 
+    }
+}
+
+.item {
+    color: #D2D2D2;
+}
+
+
+/* ==========================================================================
+Footer Top - CONTACT
+========================================================================== */
+/* #contact h4 {
+    margin-top: 0;
+} */
+
+#contact .logo {
+    height: 30px;
+}
+ul.social-media-icons {
+    padding: 0;
+    /* margin: 0 auto; */
+}
+
+.social-media-icons li {
+    background: yellow;
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    border-radius: 2em;
+    overflow:hidden;
+}
+
+#contact .facebook {
+    margin-right: 0;
+}
+
+i {
+    margin-left: 0.22em;
+    margin-top: 0.3em;
+}
+
+.social-media-icons li a {
+    display: block;
+    /* padding: 0.8em 0.9em; */
+    /* margin-left: 0.3em; */
+    max-width: 2em;
+    min-width: 2em;
+    height: 2em;
+    padding: 0.25em 0.3em;
+    white-space: nowrap;
+    line-height: 1.5em;
+    transition:.5s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-media-icons li i {
+    font-size: 20px;
+    margin-right:1.9em;
+}
+
+.social-media-icons li:hover a {
+    max-width:200px;
+    padding-right:1.1em;
+}
+
+/* LINKEDIN */
+.social-media-icons .linkedin {
+    background: #0077B5;
+    box-shadow: 0 0 5px #0077B5;
+}
+/* .social-media-icons .linkedin a {
+    background: #0077B5;
+    box-shadow: 0 0 5px #0077B5;
+} */
+
+/* GITHUB */
+.social-media-icons .github {
+    background: #D8D8D8;
+    box-shadow: 0 0 5px #D8D8D8;
+}
+.social-media-icons .github a,
+.social-media-icons .github i {
+    background: linear-gradient(-180deg, #472677 0%, #95399E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* INSTAGRAM */
+.social-media-icons .instagram {
+    background: #FFF;
+    box-shadow: 0 0 5px #FFF;
+}
+.social-media-icons .instagram a,
+.social-media-icons .instagram i {
+    background: -webkit-radial-gradient(50px 220px, #ffda75 18%,#ff3a49 43%,#ff3a49 50%,#e518a1 70%,#6634e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-media-icons .facebook {
+    background: #3b5998;
+    box-shadow: 0 0 5px #3b5998;
+}
+
+/* ==========================================================================
+Footer Top - MENU AND INFO
+========================================================================== */
+#menu ul {
+    padding: 0;
+    margin: 0;
+}
+
+#menu .title {
+    margin: 0 0 10px 0;
+}
+
+#menu li {
+    list-style: none;
+    /* text-align: center; */
+    margin-top: 10px;
+    overflow:hidden;
+}
+
+/* ==========================================================================
+POSITIONS
+========================================================================== */
+#positions {
+    color: #D2D2D2;
+}
+
+#positions p {
+    margin: 0 0 10px 0;
+}
+
+
+/* ==========================================================================
+GRID AREA SETUP
+========================================================================== */
+#contact {
+    grid-area: contact;
+}
+#menu {
+    grid-area: menu;
+    margin: 0 auto;
+}
+#positions {
+    grid-area: positions;
+    text-align: right;
+}
+
+#footer-top {
+    display: grid;
+    /* align-items: center; */
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "contact menu positions";
+}
+
+@media screen and (max-width: 999px){
+    #footer-top {
+        display: grid;
+        /* align-items: center; */
+        /* justify-content: center; */
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "contact . menu"
+        "positions positions positions";
+    }
+
+    #contact {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    #positions {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 499px){
+    #footer-top {
+        display: grid;
+        /* align-items: center; */
+        /* justify-content: center; */
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "contact"
+        "menu"
+        "positions";
+    }
+
+    #contact {
+        text-align: center;
+    }
+
+    #menu {
+        text-align: center;
+        /* width: 200px; */
+    }
+}
+
+
+
+
+/* ==========================================================================
+Footer Bottom
+========================================================================== */
+
+hr {
+    width: 90%;
+    max-width: 1200px;
+}
+
+#footer-bottom {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#footer-bottom i {
+    color: red;
+}
+
+#made-by {
+    color: #FFF;
+    /* margin-bottom: 20px; */
+}
+
+#copyright {
+    color: #FFF;
+}
+
+@media screen and (max-width: 800px) {
+
+    #footer-bottom span {
+        margin: 5px auto;
+        text-align: center;
+    }
+}
