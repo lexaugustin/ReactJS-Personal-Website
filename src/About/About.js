@@ -14,11 +14,12 @@ const about = () => {
                         acquire more knowledge in hardware design and software development.
                     </p>
                 </div>
-                {/* <div className={AboutStyles['social-icons']}>
-                    <img src="https://cdn4.iconfinder.com/data/icons/buildings-vol-2-1/256/82-512.png"/>
-                    <img src="https://cdn4.iconfinder.com/data/icons/buildings-vol-2-1/256/82-512.png"/>
-                    <img src="https://cdn4.iconfinder.com/data/icons/buildings-vol-2-1/256/82-512.png"/>              
-                </div> */}
+                <div className={AboutStyles['social-icons']}>
+                    <a href="https://www.linkedin.com/in/alexander-augustin-39289b177/"><div className={AboutStyles.linkedin}><i class="fab fa-linkedin-in"></i></div></a>
+                    <a href="https://github.com/lexaugustin"><div className={AboutStyles.github}><i class="fab fa-github"></i></div></a>
+                    <a href="https://www.instagram.com/lexaugustin_/"><div className={AboutStyles.instagram}><i class="fab fa-instagram"></i></div></a>
+                    <a href="https://twitter.com/lexaugustin"><div className={AboutStyles.twitter}><i class="fab fa-twitter"></i></div></a>
+                </div>
                 <div className={AboutStyles.buttons}>
                     <button id={AboutStyles['resume-button']}>RESUME</button>
                     <button id={AboutStyles['contact-button']}>CONTACT</button>
@@ -26,7 +27,7 @@ const about = () => {
             </div>
 
             <div className={AboutStyles['main-image']}>
-                <img src="img/portrait.jpg" alt="Alexander Portrait"/>
+                <img src="img/portrait.png" alt="Alexander Portrait"/>
             </div>
 
         </div>

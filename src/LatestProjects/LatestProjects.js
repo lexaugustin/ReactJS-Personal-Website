@@ -10,7 +10,6 @@ const latestProjects = (props) => {
             </div>
 
             <div className={LatestProjectsStyles.info}>
-
                 <div className={LatestProjectsStyles['project-name']}>
                     <p><i className={props.icon}></i>{props.name}</p>
                 </div>
@@ -28,11 +27,10 @@ const latestProjects = (props) => {
                     <p>See More <i className="far fa-arrow-alt-circle-right"></i></p>
                 </div>
 
-                <div className={LatestProjectsStyles.buttons}>
+                {/* <div className={LatestProjectsStyles.buttons}>
                     <button id={LatestProjectsStyles['resume-button']}>RESUME</button>
                     <button id={LatestProjectsStyles['contact-button']}>CONTACT</button>
-                </div>
-
+                </div> */}
             </div>
 
         </div>

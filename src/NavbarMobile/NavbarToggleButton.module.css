@@ -1,0 +1,38 @@
+/* ==========================================================================
+Toggle Button
+========================================================================== */
+#toggle-button {
+    height: 20px;
+    width: 25px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#toggle-button:focus {
+    outline: none;
+}
+
+.line {
+    height: 5px;
+    width: 25px;
+    border: 0;
+    padding: 0;
+    margin: 0 auto;
+    background-color: rgb(44, 80, 199);
+
+}
+
+
+/* @media screen and (min-width: 776px) {
+    #toggle-button {
+        display: none;
+    }
+} */

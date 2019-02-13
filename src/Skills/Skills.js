@@ -8,7 +8,7 @@ const skills = (props) => {
         <div id={SkillsStyles.skills}>
 
             <h4>{props.title}</h4>
-            <p>{props.text}</p>
+            <p>{props.children}</p>
             
         </div>
     )

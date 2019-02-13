@@ -24,13 +24,29 @@
 #interests {
     display: flex;
     align-items: center;
-    width: 80%;
-    max-width: 800px;
+    /* width: 80%; */
+    max-width: 1200px;
     margin-bottom: 30px
 }
 
-#interests:nth-child(odd) {
-    text-align: right;
+#interests h4 {
+    font-size: 20px;
+}
+
+#interests:nth-child(1) h4 {
+    color: #278EF4;
+}
+
+#interests:nth-child(2) h4 {
+    color: #FEBA40;
+}
+
+#interests:nth-child(3) h4 {
+    color: #56CD8C;
+}
+
+#interests p {
+    color: #525F7F;
 }
 
 #interests div {
@@ -38,17 +54,40 @@
 }
 
 #interests img {
-    height: 150px;
+    height: 40vw;
+    max-height: 250px;
+}
+
+#interests-skills {
+    font-size: 14px;
+    font-weight: bold;
+    color: #C67200;
 }
 
 @media screen and (min-width: 1000px) {
-    #interests:nth-child(odd){
-        align-self: flex-start;
-        flex-direction: row-reverse;
+    .interests-icon, .interests-description {
+        width: 50%;
     }
     
-    #interests:nth-child(even){
+    #interests:nth-of-type(odd) img {
+        float: right;
+    }
+    
+    #interests:nth-of-type(even) img {
+        float: left;
+    }
+
+    /* #interests:nth-child(odd){
         align-self: flex-end;
+    } */
+    
+    #interests:nth-child(even){
+        /* align-self: flex-start; */
+        flex-direction: row-reverse;
+    }
+
+    #interests:nth-child(even) {
+        text-align: right;
     }
 }
 
@@ -56,7 +95,8 @@
     #interests {   
         width: 100%;
         flex-direction: column;
-        margin: 0 auto;
+        margin: 0 auto 50px auto;
+        text-align: center;
     }
 
     #interests div {

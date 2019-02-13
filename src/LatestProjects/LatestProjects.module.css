@@ -41,11 +41,15 @@ Project Name and Title
     margin-right: 10px;
 }
 
-.project-name p {
+.project-name p:nth-child(1) {
     font-size: 18px;
     font-weight: bold;
     color: #F19559;
     margin: 10px 0;
+}
+
+.project-name p:nth-child(2) {
+    color: #FF715B;
 }
 
 .project-title p {
@@ -105,7 +109,7 @@ Project Name and Title
     color: #2DCE89;
 }
 
-@media screen and (min-width: 961px) {
+@media screen and (min-width: 960px) {
     .section-content:nth-child(odd) {
         flex-direction: row-reverse;
     }
@@ -115,7 +119,7 @@ Project Name and Title
     }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 959px) {
     .section-content {
         flex-direction: column;
     }
@@ -127,17 +131,12 @@ Project Name and Title
     .info {
         max-width: 450px;
         width: 80%;
-        margin: 40px auto;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 40px 0;
     }
 
     .buttons {
         text-align: center;
     }
+
 }
 

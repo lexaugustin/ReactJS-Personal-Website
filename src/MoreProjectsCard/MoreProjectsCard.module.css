@@ -1,7 +1,9 @@
 #card {
-    height: 500px;
-    width: 300px;
+    height: 550px;
+    width: 95%;
+    max-width: 320px;
     border-radius: 10px;
+    margin: 0 auto;
     /* margin: 3vw; */
 
     box-shadow: 0 0 4px 5px rgba(230,230,230,0.50);
@@ -16,8 +18,11 @@ Top Content
 }
 
 .top-content img {
-    height: 100%;
-    margin: 0 auto;
+    height: 98%;
+    width: 96%;
+    margin-top: 2%;
+    margin-left: 2%;
+    /* margin: 3% auto; */
     border-radius: 10px 10px 0 0;
 }
 
@@ -40,16 +45,26 @@ Bottom Content
     margin: 20px;
 }
 
+
 #see-more {
-    color: #F19559;
-    font-weight: 500;
-    letter-spacing: 1px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #F19559;
+    background-color: #F19559;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
     float: right;
-    margin: 0 20px 0 0;
+    margin: 0 30px 30px 0;
 }
 
 #see-more i {
-    margin-left: 5px;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    margin: 0 auto;
 }
 
 

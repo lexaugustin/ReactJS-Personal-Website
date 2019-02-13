@@ -4,7 +4,7 @@ import FooterStyles from './Footer.module.css'
 
 const footer = () => {
     return (
-        <div id={FooterStyles.footer}>
+        <footer id={FooterStyles.footer}>
             
             {/* ----------- Footer Top ---------- */}
             <div id={FooterStyles['footer-top']}>
@@ -49,7 +49,7 @@ const footer = () => {
                 <span id={FooterStyles['copyright']}>© 2019 Alexander Augustin. All rights reserved</span>
             </div>
 
-        </div>
+        </footer>
     )
 }
 

@@ -1,0 +1,56 @@
+#navbar-mobile {
+    height: 40%;
+    width: 50%;
+    max-height: 400px;
+    max-width: 400px;
+    min-height: 380px;
+    min-width: 240px;
+    background-color: #FFF;
+    border-radius: 10px;
+    display: fixed;
+    top: 5%;
+    right: 5%;
+    display: flex;
+}
+
+#close-button {
+    font-size: 25px;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    right: 30px;
+    top: 20px;
+}
+
+#close-button i {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-mobile-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navbar-mobile ul li {
+    display: flex;
+    align-items: center;
+    margin: 10% 0;
+}
+
+#navbar-mobile img {
+    height: 30px;
+    margin-right: 10%;
+}
+
+#navbar-mobile a {
+    color: Black;
+    text-decoration: none;
+}
+
+#navbar-mobile a:hover,
+#navbar-mobile a:active {
+    color: green;
+}

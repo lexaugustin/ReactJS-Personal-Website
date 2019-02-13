@@ -1,19 +1,56 @@
-nav {
-    width: 100%;
-    /* background-color: silver; */
+/* .nav {
     position: fixed;
+    width: 100%;
+    height: 90px;
     z-index: 1;
-    /* height: 70px; */
 }
 
-#navbar-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    max-width: 1600px;
-    margin: 7px auto;
+.navbarScrolling {
+    position: fixed;
+    background-color: red;
+    color: red;
+} */
+
+/* .scrolling menu {
+    color: #525F7F;
+} */
+
+nav {
+    /* background-color: silver; */
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+    transition: 0.2s;
 }
+
+nav li a {
+    color: #FFF;
+}
+  
+.navbarScrolling {
+    position: fixed;
+    height: 70px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0px 1px 2px #e4e4e4;
+}
+
+.navbarScrolling li a {
+    color: #525F7F;
+}
+
+@media screen and (min-width: 776px) {
+    #navbar-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+}
+
 #logo {
     align-items: center;
 }
@@ -26,15 +63,26 @@ nav {
 #menu {
     display: flex;
     align-items: center;
-    color: #FFF;
 }
 
 #menu li {
     list-style: none;
     display: inline;
     margin: 0 25px;
-    align-self: center;
+    /* align-self: center; */
 }
+
+#menu li a {
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+#menu li a:hover {
+    border-bottom: 5px solid #F1B117;
+    border-width: 10%;
+    cursor: pointer;
+}
+
 
 #contact {
     font-weight: 700;
@@ -44,6 +92,40 @@ nav {
     border: 5px solid #FFD862;
     border-radius: 20px;
     padding: 5px 30px;
-    margin-left: 100px;
+    margin-left: 50px;
     /* margin: 0 0 0 100px; */
+}
+
+#menu-button {
+    display: none;
+}
+
+@media screen and (max-width: 929px) {
+    nav {
+        background-color: transparent;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menu-button {
+        height: 40px;
+        width: 40px;
+        border: 2px solid #FFF;
+        background-color: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    #navbar-content {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
 }
