@@ -13,7 +13,10 @@ const moreProjectsCard = (props) => {
             <div className={MoreProjectCardStyles['bottom-content']}>
                 <p id={MoreProjectCardStyles['project-name']}>{props.title}</p>
                 <p>{props.description.substring(0, 180) + "..."}</p>
-                <div id={MoreProjectCardStyles['see-more']}><i class="fas fa-plus"></i></div>
+                <button id={MoreProjectCardStyles['see-more']}>
+                    <i class="fas fa-plus"></i>
+                    <a href="google.com"></a>
+                </button> 
             </div> 
 
         </div>

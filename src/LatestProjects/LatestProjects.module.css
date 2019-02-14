@@ -5,8 +5,15 @@
     margin-top: 75px;
 }
 
-.info {
+.section-content:nth-child(even) .info {
     max-width: 450px;
+    /* width: 70%; */
+    /* margin: 0 auto; */
+    margin: 0 7%;
+}
+
+.section-content:nth-child(odd) .info {
+    max-width: 350px;
     /* width: 70%; */
     /* margin: 0 auto; */
     margin: 0 7%;
@@ -15,13 +22,28 @@
 /* ==========================================================================
 Project Image
 ========================================================================== */
-.section-content .main-image {
+.section-content:nth-of-type(even) .main-image{
     width: 45%;
     max-width: 250px;
     margin: 0 7%;
-    /* margin-left: 5%; */
-    /* display: block; */
-    /* margin: 0 auto; */
+}
+
+.section-content:nth-of-type(odd) .main-image{
+    height: 45%;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 0%;
+}
+
+.section-content:nth-of-type(even) img {
+    max-width: 350px;
+    width: 100%;
+}
+
+.section-content:nth-of-type(odd) img {
+    height: auto;
+    width: auto;
+    width: 80%;
 }
 
 
@@ -62,14 +84,6 @@ Project Name and Title
 .text p {
     color: #525F7F;
     margin: 30px 0;
-}
-
-.section-content .main-image img {
-    max-width: 350px;
-    width: 100%;
-    /* margin-left: 5%; */
-    /* display: block; */
-    /* margin: 0 auto; */
 }
 
 .see-more {

@@ -46,7 +46,7 @@ class navbar extends Component {
         window.removeEventListener('scroll');
     }
 
-    render(props) {
+    render() {
 
         let mobileMenu;
 

@@ -18,29 +18,7 @@ import './App.css';
 
 class App extends Component {
 
-  // state = {
-  //   showNavbarMobile: false
-  // };
-
-  // navbarButtonClickHandler = () => {
-  //   this.setState((prevState) => {
-  //     return {
-  //       showNavbarMobile: !prevState.showNavbarMobile
-  //     };
-  //   });
-  // }
-
-  // closeButtonClickHandler = () => {
-  //   this.setState({showNavbarMobile: false})
-  // }
-
   render() {
-
-    // let mobileMenu;
-
-    // if(this.state.showNavbarMobile){
-    //   mobileMenu = <NavbarMobile close={this.closeButtonClickHandler}/>
-    // }
 
     return (
       <div style={{height: '100%'}}>
@@ -87,7 +65,7 @@ class App extends Component {
                             senior project. It will be a portfolio web application where students and professionals can showcase 
                             their employment history, projects and achievements. It will also contains a job search features that
                             help students find jobs based on their skills."
-              image = "img/projects/today/today-screen.png"
+              image = "img/projects/folio/folio.png"
             />
           </div>
         </section>
@@ -201,21 +179,21 @@ class App extends Component {
               <Interests
                 img = "img/icons/software-engineering.svg"
                 title = "Software Development"
-                text = "I have a big interest in anything software related, especially web and mobile development. I have extensive experience in web technologies"
+                text = "I have a lot of interests in anything software related, especially web and mobile development."
                 skills = "Java, JavaScript/jQuery, Swift, C, C++, HTML/CSS, Bootstrap, Express.js, NodeJS, ReactJS, AngularJS, MongoDB, MySQL, Agile Development, Git and RESTful service"
               />
 
               <Interests
                 img = "img/icons/ui-ux.svg"
                 title = "UI/UX Design"
-                text = "I, sometimes, put half of the time that I spend working on a project in trying to make it look the best possible."
+                text = "I am also interesed in UI/UX design as I like to put a lot of work in the user interface of my projects to make them look the best possible."
                 skills = "Sketch, AdobeXD"
               />
 
               <Interests
                 img = "img/icons/machine-learning.svg"
                 title = "Machine Learning"
-                text = "Machine learning is the last are of computer science that has caught my attention after attending some workshops and watching some crash courses on it. I will be taking a machine learning class my next and last semester."
+                text = "Machine learning is the last area of computer science that has caught my attention after attending some workshops and watching some crash courses about the subject."
               />
             </div>
           </div>
@@ -230,7 +208,7 @@ class App extends Component {
             <SectionHead
               icon = "img/icons/letter.svg"
               title = "Contact"
-              subtitle="I can be contacted anytime via this form or through the information conatines in my resume"
+              subtitle="I can be contacted anytime via this form"
             />
             
             <Contact></Contact>

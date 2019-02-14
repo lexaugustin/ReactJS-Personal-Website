@@ -4,8 +4,11 @@
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
+    "react-animated-css": "^1.0.4",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "wow.js": "^1.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
